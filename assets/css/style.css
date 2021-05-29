@@ -1,0 +1,1493 @@
+/* ---------------- ESTILIZAÇÃO HEADER ----------------- */
+
+body,
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-topo {
+    width: 100%;
+    height: 40px;
+    padding: 0px;
+    margin: 0 auto;
+    background: #1d3b68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-topo-container {
+    width: 1200px;
+    height: 100%;
+    padding: 0px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-topo-left {
+    width: 50%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.desconto-text {
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.barra-topo-right {
+    width: 50%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.atendimento-text {
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.atendimento-icon {
+    font-size: 16px;
+    color: white;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.barra-principal {
+    width: 100%;
+    height: 85px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3560a0;
+}
+
+.barra-principal-container {
+    width: 1200px;
+    height: 100%;
+    padding: 0px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 230px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.login-icon {
+    font-size: 22px;
+    color: white;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.logo-text span {
+    font-weight: 700;
+}
+
+.search {
+    width: 400px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search #search {
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+    height: 20px;
+    min-height: 20px;
+    max-height: 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #272727;
+    background: white;
+}
+
+.botoes {
+    width: 300px;
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+}
+
+.botoes .login {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 30px;
+    margin: 0 auto;
+    width: auto;
+    background: transparent;
+}
+
+.botoes .carrinho {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: 30px;
+    margin: 0 auto;
+    vertical-align: middle;
+    width: auto;
+}
+
+.carrinho-icon {
+    font-size: 22px;
+    color: white;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.menu {
+    width: 100%;
+    height: 45px;
+    padding: 0px;
+    margin: 0px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #1d3b68;
+}
+
+.menu-container {
+    width: 1200px;
+    height: 100%;
+    padding: 0px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu-container ul li {
+    width: auto;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-container ul li a {
+    width: auto;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #6c6d6d;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.menu-container ul li .contato {
+    color: #2c307f;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.menu-container ul li a:hover {
+    color: #2c307f;
+    font-weight: 700;
+    transition: 0.4s ease all;
+}
+
+
+/* ---------------- ESTILIZAÇÃO BENNER-1 ----------------- */
+
+.banner-1 {
+    width: 100%;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagens/banner-mecanica.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.banner-1-container {
+    width: 1200px;
+    height: 100%;
+    padding: 0px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner-inicial-content {
+    width: 640px;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+.banner-inicial-title {
+    font-size: 38px;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 50px;
+}
+
+.banner-inicial-title span {
+    font-weight: 700;
+}
+
+.banner-inicial-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.banner-inicial-btn1 {
+    width: 180px;
+    height: 45px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.banner-inicial-btn1:hover {
+    color: #3b3c3e;
+    background: white;
+    transition: 0.2s ease all;
+}
+
+.banner-inicial-btn2 {
+    width: 180px;
+    height: 45px;
+    color: #3b3c3e;
+    background: white;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.banner-inicial-btn2:hover {
+    background: transparent;
+    color: white;
+    transition: 0.2s ease all;
+}
+
+
+/* ---------------- ESTILIZAÇÃO PRODUTOS ----------------- */
+
+.produtos {
+    width: 100%;
+    height: auto;
+    padding: 80px 0px 0px 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-produto-box {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 20px;
+}
+
+.icon-destaque {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.titulo-destaques {
+    font-size: 28px;
+    color: #2c307f;
+    font-weight: 700;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.destaque-linha {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #b1b0af;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 4px;
+}
+
+.destaque-linha .destaque-linha-box {
+    width: 100px;
+    height: 50px;
+    border-bottom: 5px solid #2c307f;
+}
+
+.produtos-container {
+    width: 1200px;
+    height: 100%;
+    padding: 80px 20px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(4, 250px);
+    grid-auto-rows: auto;
+}
+
+.card-produto {
+    width: 100%;
+    text-decoration: none;
+    box-shadow: 0 0 3px rgb(204 204 202);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.card-produto:hover {
+    text-decoration: none;
+    box-shadow: 0 0 10px rgb(204 204 202);
+    transition: .2s ease all
+}
+
+.card-produto:hover .btn-produto {
+    background: #3b3c3e;
+}
+
+.imagem-produto {
+    width: 100%;
+    height: 200px;
+}
+
+.card-produto-box {
+    width: 100%;
+    height: 130px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #3b3c3e;
+}
+
+.titulo-produto {
+    font-size: 14px;
+    text-align: center;
+}
+
+.preco-produto {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn-produto {
+    padding: 7px 50px;
+    border-radius: 10px;
+    background: #2c307f;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* ---------------- ESTILIZAÇÃO FOOTER ----------------- */
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 80px 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1c1e22;
+}
+
+.footer-container {
+    width: 1200px;
+    height: auto;
+    padding: 0px 20px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(4, 25% 20% 25% 30%);
+}
+
+.footer-container .box {
+    width: 100%;
+    text-decoration: none;
+    height: 230px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-container .box-1 {
+    width: 100%;
+    text-decoration: none;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-container .box-1 .logo-text {
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer-container .box-1 .logo-text span {
+    color: #2c307f;
+}
+
+.footer-container .box ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 0px 0px 0px 100px;
+    margin: 0px;
+}
+
+.footer-container .box ul li {
+    width: auto;
+    height: auto;
+    padding: 0px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-container .box ul li a {
+    width: auto;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 18px;
+}
+
+.footer-container .box ul li a:hover {
+    color: #2c307f;
+    font-weight: 700;
+}
+
+.footer-container .box ul li .contato {
+    background: #2c307f;
+    color: white;
+    border-radius: 10px;
+    margin-left: -5px;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.footer-container .box ul li .contato:hover {
+    color: white;
+}
+
+.footer-container .box .formulario-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.footer-container .box .formulario-title {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 16px;
+    color: #ebebeb;
+    font-weight: 500;
+    margin-bottom: 25px;
+    margin-top: -5px;
+}
+
+.footer-container .box .formulario-container #footer-nome-2 {
+    width: 100%;
+    margin-right: 0px;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #2c307f;
+    float: left;
+    color: #ebebeb;
+}
+
+.footer-container .box .formulario-container #footer-email-2 {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #2c307f;
+    margin: 15px 0px;
+    color: #ebebeb;
+}
+
+.footer-container .box .btn-formulario {
+    width: 100%;
+    margin: 5px 0px;
+    height: 40px;
+    background: #2c307f;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.footer-container .contato-footer-container {
+    width: auto;
+    height: 100%;
+    display: block;
+    color: #ebebeb;
+    font-size: 16px;
+    text-align: left;
+}
+
+.footer-container .contato-footer-title {
+    margin-bottom: 20px;
+}
+
+.footer-container .footer-icon-fone {
+    font-size: 16px;
+    color: #2c307f;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.footer-container .footer-fone-text {
+    font-size: 14px;
+    color: #ebebeb;
+    vertical-align: middle;
+}
+
+.footer-container .footer-fone-text:hover {
+    color: #2c307f;
+    transition: .2s ease all;
+}
+
+.footer-container .footer-icon-local {
+    font-size: 25px;
+    color: #2c307f;
+    margin-right: 20px;
+    float: left;
+    vertical-align: middle;
+}
+
+.footer-container .footer-local-text {
+    float: left;
+    width: 162px;
+    font-size: 14px;
+    color: #ebebeb;
+    vertical-align: middle;
+}
+
+.footer-container .footer-icon-whatsapp {
+    color: #649b61;
+    font-size: 25px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.footer-container .footer-whatsapp-text {
+    margin: 15px 0px 20px 0px;
+    font-size: 14px;
+    color: #ebebeb;
+    vertical-align: middle;
+}
+
+.footer-container .footer-whatsapp-text:hover {
+    color: #649b61;
+    transition: .2s ease all;
+}
+
+
+/* ---------------- ESTILIZAÇÃO PRODUTOS ----------------- */
+
+.login {
+    width: 100%;
+    height: auto;
+    padding: 0px 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.login-container {
+    width: 1200px;
+    height: auto;
+    padding: 0px 20px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.login-box-1 {
+    width: 100%;
+    text-decoration: none;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    background: #1d3b68;
+}
+
+.login-box-2 {
+    width: 100%;
+    text-decoration: none;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    background: white;
+}
+
+.login-container .formulario-container {
+    width: 60%;
+    height: auto;
+    display: block;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.login-container .formulario-title {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 16px;
+    color: #ebebeb;
+    font-weight: 500;
+    margin-bottom: 25px;
+    margin-top: -5px;
+}
+
+.login-container .formulario-container #footer-nome {
+    width: 100%;
+    margin-right: 0px;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    float: left;
+    color: white;
+}
+
+.login-container .formulario-container #footer-email {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.esqueci-senha {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.esqueci-box {
+    width: 200px;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.esqueci-box input {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.permanecer-logado {
+    font-size: 12px;
+    color: white;
+    vertical-align: middle;
+}
+
+.recuperar-senha {
+    font-size: 12px;
+    color: white;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.recuperar-senha a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-container .btn-formulario {
+    width: 100%;
+    margin: 5px 0px;
+    height: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    color: #1d3b68;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login-box-2-content {
+    width: 60%;
+    height: auto;
+    padding: 0px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conta-titulo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1d3b68;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conta-texto {
+    font-size: 14px;
+    color: #3b3c3e;
+    text-align: center;
+}
+
+.btn-conta {
+    padding: 10px 50px;
+    border-radius: 10px;
+    background: #1d3b68;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 12px;
+}
+
+.barra-principal input::placeholder {
+    color: #6b6767 !important;
+    font-size: 12px;
+}
+
+
+/* ---------------- ESTILIZAÇÃO PRODUTOS ----------------- */
+
+.cadastro {
+    width: 100%;
+    height: auto;
+    padding: 0px 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.cadastro-container {
+    width: 1200px;
+    height: auto;
+    padding: 80px 20px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 45%);
+}
+
+.card-cadastro {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0 auto;
+    background: #1d3b68;
+    border-radius: 30px;
+    padding: 40px 20px;
+}
+
+.cadastro .formulario-container {
+    width: 60%;
+    height: auto;
+    display: block;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.cadastro .formulario-title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: #ebebeb;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.cadastro .formulario-container #footer-nome {
+    width: 100%;
+    margin-right: 0px;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    float: left;
+    color: white;
+}
+
+.cadastro .formulario-container #footer-email {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro .formulario-container #footer-CPF {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro .formulario-container #footer-nascimento {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro #select-sexo {
+    font-size: 12px;
+    color: white;
+    margin: 15px 10px 15px 0px;
+}
+
+.cadastro #sexo {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+.cadastro .formulario-container #footer-senha {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro .formulario-container #footer-confirmar-senha {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro .formulario-container #footer-codigo {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro .btn-formulario {
+    width: 100%;
+    margin: 5px 0px;
+    height: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    color: #1d3b68;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+/* ---------------- ESTILIZAÇÃO PORTAL ----------------- */
+
+.portal {
+    width: 100%;
+    height: auto;
+    padding: 80px 0px 0px 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portal-container {
+    width: 1200px;
+    height: 100%;
+    padding: 80px 20px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(4, 250px);
+    grid-auto-rows: auto;
+}
+
+.link-portal {
+    width: 100%;
+    text-decoration: none;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+.card-portal {
+    width: 100%;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    background: #1d3b68;
+    border-radius: 20px;
+}
+
+.card-portal:hover {
+    background: #3b3c3e;
+    transition: 0.2s ease all;
+}
+
+.card-portal-text {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+/* ---------------- ESTILIZAÇÃO PORTAL ----------------- */
+
+.cadastro-produto {
+    width: 100%;
+    height: auto;
+    padding: 0px 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.cadastro-produto-container {
+    width: 1200px;
+    height: auto;
+    padding: 80px 20px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 45%);
+}
+
+.cadastro-produto .formulario-container {
+    width: 60%;
+    height: auto;
+    display: block;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.card-cadastro-produto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0 auto;
+    background: #1d3b68;
+    border-radius: 30px;
+    padding: 40px 20px;
+}
+
+.cadastro-produto .formulario-title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: #ebebeb;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.cadastro-produto .form-1 {
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 80px 0px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, 45%);
+    grid-auto-rows: auto;
+    position: relative;
+}
+
+.cadastro-produto .formulario-container #footer-barra {
+    width: 100%;
+    margin-right: 0px;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    float: left;
+    color: white;
+}
+
+.cadastro-produto .formulario-container #footer-descricao {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro-produto .formulario-container #footer-estoque {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro-produto .formulario-container #footer-fornecedor {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro-produto .formulario-container #footer-interno {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro-produto .formulario-container #footer-fornecedor {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro-produto .formulario-container #footer-estoque-maximo {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro-produto .formulario-container #footer-estoque-minimo {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro-produto .formulario-container #footer-localizacao {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro-produto .formulario-container #footer-unidade {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro-produto .formulario-container #footer-CNPJ {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin: 15px 0px;
+    color: white;
+}
+
+.cadastro-produto .btn-formulario {
+    width: 100%;
+    margin: 5px 0px;
+    height: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    color: #1d3b68;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+}
+
+
+/* ---------------- ESTILIZAÇÃO TABELA----------------- */
+
+.tabela-box {
+    width: 100%;
+    height: auto;
+    padding: 80px 0px 0px 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+}
+
+.tabela-container {
+    width: 1200px;
+    height: auto;
+    padding: 50px 20px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 80%);
+}
+
+.tabela {
+    border-collapse: collapse;
+    /* CSS2 */
+    background: #FFFFF0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tabela td {
+    border: 1px solid gray;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.tabela .titulo-table td {
+    background: #1d3b68;
+    color: white;
+    font-weight: 600;
+}
+
+.tabela-box .formulario-container {
+    width: 20%;
+    height: auto;
+    display: block;
+    padding: 0px;
+    margin: 0 auto;
+    background: rgb(39, 39, 39);
+    padding: 20px 20px;
+    margin-top: 30px;
+}
+
+.tabela-box .formulario-container #footer-nome {
+    width: 100%;
+    margin-right: 0px;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #2c307f;
+    float: left;
+    color: #ebebeb;
+}
+
+.tabela-box .formulario-container #footer-email {
+    width: 100%;
+    padding: 0px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #2c307f;
+    margin: 15px 0px;
+    color: #ebebeb;
+}
+
+.tabela-box .btn-formulario {
+    width: 100%;
+    margin: 5px 0px;
+    height: 40px;
+    background: #2c307f;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.error {
+    color: #ff4560;
+}
+
+.error::-webkit-input-placeholder {
+    color: #ff4560;
+}
+
+#footer-status {
+    color: #ff4560;
+    margin: 15px 0 10px 0;
+    font-size: 13px;
+    line-height: 15px;
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+}

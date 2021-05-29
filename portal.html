@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Peças</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="barra-topo">
+            <div class="barra-topo-container">
+                <div class="barra-topo-left">
+                    <p class="desconto-text">Produtos com até 60% de desconto</p>
+                </div>
+                <div class="barra-topo-right">
+                    <p class="atendimento-text"><i class="far fa-question-circle atendimento-icon"></i>Atendimento</p>
+                </div>
+            </div>
+        </div>
+        <div class="barra-principal">
+            <div class="barra-principal-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <p class="logo-text">Auto <span>Peças</span></p>
+                    </a>
+                </div>
+                <div class="search">
+                    <input type="text" id="search" placeholder="O que você está procurando?">
+                </div>
+                <div class="botoes">
+                    <a href="portal.html" class="login">
+                        <p class="login-text"><i class="fas fa-user login-icon"></i>Olá, bem vindo!</p>
+                    </a>
+                    <a href="" class="carrinho">
+                        <p class="carrinho-text"></p><i class="fas fa-shopping-cart carrinho-icon"></i>Carrinho</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu-container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Pneus</a></li>
+                    <li><a href="">Suspensão</a></li>
+                    <li><a href="">Mecanica</a></li>
+                    <li><a href="">Elétrica</a></li>
+                    <li><a href="" class="contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="portal">
+        <div class="titulo-produto-box">
+            <p class="titulo-destaques">Navegue entre as opções</p>
+            <div class="destaque-linha">
+                <div class="destaque-linha-box">
+                </div>
+            </div>
+        </div>
+        <div class="portal-container">
+            <a href="cadastro-usuario.html" class="link-portal">
+                <div class="card-portal">
+                    <p class="card-portal-text">Cadastro de Usuário</p>
+                </div>
+            </a>
+            <a href="produto.html" class="link-portal">
+                <div class="card-portal">
+                    <p class="card-portal-text">Cadastro de Produto</p>
+                </div>
+            </a>
+            <a href="fornecedor.html" class="link-portal">
+                <div class="card-portal">
+                    <p class="card-portal-text">Cadastro de Fornecedor</p>
+                </div>
+            </a>
+            <a href="pagamento.html" class="link-portal">
+                <div class="card-portal">
+                    <p class="card-portal-text">Formas de Pagamento</p>
+                </div>
+            </a>
+            <a href="index.html" class="link-portal">
+                <div class="card-portal">
+                    <p class="card-portal-text">E-commerce</p>
+                </div>
+            </a>
+            <a href="rastreio.html" class="link-portal">
+                <div class="card-portal">
+                    <p class="card-portal-text">Relatório de Rastreio</p>
+                </div>
+            </a>
+            <a href="vendas.html" class="link-portal">
+                <div class="card-portal">
+                    <p class="card-portal-text">Relatório de Vendas</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="box-1">
+                <a href="">
+                    <p class="logo-text">Auto <br/><span>Peças</span></p>
+                </a>
+            </div>
+            <div class="box">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Pneus</a></li>
+                    <li><a href="">Suspensão</a></li>
+                    <li><a href="">Mecanica</a></li>
+                    <li><a href="">Elétrica</a></li>
+                    <li><a href="" class="contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="formulario-container">
+                    <p class="formulario-title">Newsletter</p>
+                    <form action="" class="form-1" onsubmit="return validaFooter(); return false;" enctype="multipart/form-data">
+                        <input type="text" maxlength="100" name="nome" value="" placeholder="Nome" id="footer-nome-2">
+                        <input type="text" maxlength="60" name="email" value="" placeholder="Email" id="footer-email-2">
+                        <div id="footer-status"></div>
+                        <input type="submit" id="footer-enviar" value="Enviar" class="btn-formulario">
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="contato-footer-container">
+                    <p class="contato-footer-title">Entre em contato</p>
+                    <a href="tel:+5511999999999" target="_Blank">
+                        <p class="footer-fone-text"><span class="footer-icon-fone"><i class="fas fa-phone-alt icon-barra-color-1"></i></span>(11) 99999-9999</p>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?L=pt&phone=5511999999999" target="_Blank">
+                        <p class="footer-whatsapp-text"><span class="footer-icon-whatsapp"><i class="fab fa-whatsapp icon-barra-color-2"></i></span>(11) 2222-2222</p>
+                    </a>
+                    <p class="footer-icon-local"><i class="fas fa-map-marker-alt"></i></p>
+                    <p class="footer-local-text">Av. São Miguel, 4335 - Parque Boturussu, São Paulo - SP</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
